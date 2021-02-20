@@ -16,4 +16,36 @@
         background: $hr_white;
         border-radius: 24px;
     }
+
+    .logo-container {
+        text-align: center;
+        color : $hr_accent;
+    }
+
+    .nav-container {
+        padding-left: 16px;
+        padding-top: 16px;
+        .nav-item {
+            display: flex;
+            align-items: center;
+            color : $hr_white;
+            padding : 8px;
+            margin-top: 28px;
+            cursor: pointer;
+            transition: 0.2s all ease-in-out;
+            .item-name {
+                margin-left : 16px;
+                font-weight: 800;
+                cursor: pointer;
+            }
+            &:hover{
+                color : transparentize($color: $hr_accent, $amount: 0.6);
+                border-right: 4px solid transparentize($color: $hr_accent, $amount: 0.6) ;
+            }
+            &.selected {
+                color : $hr_accent;
+                border-right: 4px solid $hr_accent;
+            }
+        }
+    }
 }
