@@ -1,7 +1,12 @@
 import React from 'react';
+import Header from '../../components/header/Header';
 
 const Home = () => {
-    return <div>This is Home</div>;
+    return (
+        <div>
+            <Header pageHeader="Dashboard" />
+        </div>
+    )
 }
 
 

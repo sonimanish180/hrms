@@ -64,7 +64,6 @@ const DashboardLayout = ({children}) => {
                 </div>
             </nav>
             <div className="main-container">
-                here are childrens
                 {children}
             </div>
         </div>

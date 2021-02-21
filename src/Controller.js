@@ -14,7 +14,6 @@ const Controller = () => {
     return (
         <Router>
             <DashboardLayout>
-                this is dashbaoard layout.
                 <Switch>
                     <Route exact path="/" render={(props) => <Home {...props} />} />
                     <Route exact path="/recruitment" render={(props) => <Recruitment {...props} />} />
