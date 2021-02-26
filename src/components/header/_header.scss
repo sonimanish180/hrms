@@ -1,7 +1,14 @@
 .header {
-    padding : 24px 32px 24px 16px;
+    padding : 16px 8px 4px 24px;
+    flex-basis: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    .page-header {
+        flex-basis: 75%;
+        display: flex;
+        justify-content: space-between;
+    }
     
     .heading {
         margin:0px;
@@ -10,17 +17,21 @@
         display: flex;
         align-items: center;    
         .action-icon {
-            margin-left: 16px;
+            margin-left: 24px;
             height: 24px;
             width: 24px;
             cursor: pointer;
         }    
     }
     .profile-container {
+        flex-basis: 25%;
+        justify-content: flex-end;
         display: flex;
         align-items: center;
         img {
             margin-left: 16px;
+            width: 56px;
+            height: 56px;
         }
     }
     .input-component {

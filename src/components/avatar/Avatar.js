@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Avatar = () => {
+const Avatar = ({src="/"}) => {
     return (
         <div className="avatar">
-            <img className="image" src="https://reqres.in/img/faces/2-image.jpg" alt="User Image" />
+            <img className="image" src={src} alt="User Image" />
         </div>
     );
 }

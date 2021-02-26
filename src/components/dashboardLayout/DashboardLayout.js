@@ -5,6 +5,10 @@ import { CgFileDocument } from 'react-icons/cg';
 import { VscGraph } from 'react-icons/vsc';
 import { FiCalendar, FiSettings } from 'react-icons/fi';
 import { Link, useLocation } from 'react-router-dom';
+import {BsBook} from 'react-icons/bs'
+import myImage from '../../images/MyImage.svg'
+
+// import { ReactComponent as MyLogo } from '../../images/displayImage.svg';
 
 
 const navItems = [
@@ -47,7 +51,8 @@ const DashboardLayout = ({children}) => {
         <div className="dashboard-layout">
             <nav className="side-nav-bar">
                 <div className="logo-container">
-                    <h3>Newton HR</h3>
+                    <BsBook />
+                    <h2>Newton HR</h2>
                 </div>
                 <div className="nav-container">
                     {navItems.map((navItem, index) => (
@@ -60,7 +65,9 @@ const DashboardLayout = ({children}) => {
                     ))}
                 </div>
                 <div className="image-container">
-                    Add a svg here.
+                    {/* <svg height="100px" width="100px" xmlns="src/images/displayimage.svg" /> */}
+                    {/* <displayImage /> */}
+                    <img src={myImage} alt="image" height="100%" width="100%" />
                 </div>
             </nav>
             <div className="main-container">

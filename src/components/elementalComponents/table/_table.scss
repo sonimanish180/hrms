@@ -1,0 +1,55 @@
+.table-component {
+    .table-head-row {
+       min-height: 48px;
+    }
+    tr {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid transparentize($color: $hr_gray1, $amount: 0.8);
+        max-height: 56px;
+        th, td {
+            display: flex;
+            align-items: center;
+            // border: 1px solid black;
+            width: 25%;      
+        }
+        .status-icon-blue {
+            svg {
+                color: blue; 
+                margin-right: 4px;            
+            }
+        }
+        .status-icon-green {
+            svg {
+                color: green;
+                margin-right: 4px; 
+            }
+        }
+        .status-icon-yellow {
+            svg {
+                color: yellow;
+                margin-right: 4px; 
+            }
+        }
+        .first-column {
+            width: 35%;
+        }
+        .last-column {
+            width: 24px;
+            svg{
+                height: 24px;
+                width: 24px;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }    
+    .avatar {
+        .image {
+            height:48px;
+            width: 48px;
+            margin-top: 8px;
+        }
+    }
+}

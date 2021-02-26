@@ -1,0 +1,43 @@
+.notification-card {
+  background: transparentize($color: $hr_accent, $amount: 0.25);
+  border-radius: 24px;
+  padding: 16px;
+  padding-top: 24px;
+  // height: 30%;
+  flex-basis: 36%;
+  display: flex;
+  justify-content: space-between;
+  .notification-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 40%;
+    span {
+      font-weight: 800;
+    }
+    .notification-description {
+      flex-basis: 30%;
+      min-width: 200px;
+      max-width: 280px;
+    }
+    .read-more {
+      width: 80px;
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .notification-svg-container {
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 48px;
+    img {
+      height: 100%;
+    }
+  }
+}

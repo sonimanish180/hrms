@@ -9,18 +9,16 @@ const Header = (props) => {
   return (
     <header className="header">
       <div className="page-header">
-        <h1 className="heading">{props.pageHeader}</h1>
-      </div>
-      <div style={{display:"flex", justifyContent:"space-between", width:"50%"}}>
+        <h2 className="heading">{props.pageHeader}</h2>
         <div className="action-container">
           <Input icon={<FiSearch />} placeHolder="Search..." classes={{inputComponentClass:"hover-action"}} />
           <BiSend className="action-icon" />
           <IoIosNotificationsOutline className="action-icon" />
         </div>
-        <div className="profile-container">
-          <label>Janet Weaver</label>
-          <Avatar />
-        </div>
+      </div>     
+      <div className="profile-container">
+        <label>Janet Weaver</label>
+        <Avatar src="https://reqres.in/img/faces/2-image.jpg" />
       </div>
     </header>
   );
