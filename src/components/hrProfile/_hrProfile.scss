@@ -1,0 +1,71 @@
+.hr-profile-container {
+    background: $hr_white;
+    flex-basis: 60%;
+    width: 100%;
+    // border: 5px solid black;
+    border-radius: 24px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    .profile-header {
+        display: flex;
+        align-items: center;
+        padding-top: 16px;
+        padding-left: 16px;
+        .profile-name-container {
+            margin-left: 20px;
+            p {
+                margin: 0px;
+            }
+            .profile-name {
+                font-weight: 800;
+                margin-bottom: 2px;
+            }
+            .designation {
+                font-weight: 600;
+                color: $hr_gray4;
+            }
+        }
+    }
+    .contact-container {
+        display: flex;
+        padding-left: 16px;
+        margin: 12px 16px 0px 16px;
+        padding-bottom: 12px;
+        border-bottom: 2px solid transparentize($color: $hr_gray1, $amount: 0.5);
+        .phone, .mail, .ellipsis {
+            background: transparentize($color: $hr_gray1, $amount: 0.8);
+            color: $hr_gray5;
+            padding: 4px;
+            border-radius: 16px;
+            width: 24px;
+            height: 24px;
+            margin-right: 24px;
+            cursor: pointer;
+            &:hover {
+                background: transparentize($color: $hr_gray1, $amount: 0.5);
+            }
+        }
+    }
+    .basic-details {
+        padding: 16px 16px;
+        .joined-date, .projects, .accomplishments {
+            margin: 0px;
+            margin-bottom: 6px;
+            display: flex;
+            justify-content: space-between;
+            span {
+                font-weight: 600;
+                color:none;
+            }
+        }
+    }
+    // .button-container {
+    //     width: 100%;
+    //     padding-left: 16px;
+    //     padding-right: 16px;
+        .button {
+            margin: 0px 16px;
+        }
+    // }
+}

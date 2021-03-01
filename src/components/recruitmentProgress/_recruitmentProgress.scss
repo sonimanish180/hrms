@@ -1,0 +1,70 @@
+.recuitment-progress-card {
+    // background-color: transparentize($color: $hr_gray5, $amount: 0.5);
+    background:  $hr_white;
+    flex-basis: 74%;
+    margin-top: 16px;
+    // margin-bottom: 16px;
+    border-radius: 24px;
+    padding: 0px 16px;
+    // padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+    .recruitment-progress-header {
+        background: $hr_white;
+        flex-basis: 10%;
+        display: flex;
+        position: sticky;
+        top: 0;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 16px;
+        padding-bottom: 8px;
+        border-bottom : 2px solid transparentize($color: $hr_gray1, $amount: 0.8);
+        .heading {
+            margin: 0px;
+        }
+        .button {
+            padding-right: 24px;
+            padding-left: 24px;
+        }
+    }
+    .recruitment-card-footer {
+        flex-basis: 15%;
+        position: sticky;
+        bottom: 0;
+        background: $hr_white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: small;
+        .view-all {
+            cursor: pointer;
+            font-weight: 800;
+        }
+        .show-result-info {
+            color: $hr_gray4;
+        }
+    }
+    .table-container {
+        overflow: auto;
+        display: flex;
+        flex-basis: auto;
+        &::-webkit-scrollbar {
+            display: none;
+          }
+        .table {
+            flex-basis: 100%;
+            overflow: auto;
+            
+            .table-head-fixed {
+                tr {
+                    position: sticky;
+                    top: 0;
+                    background: $hr_white;                
+                }
+            }       
+        }
+    }
+}

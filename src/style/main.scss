@@ -1,0 +1,25 @@
+@import "./theme.scss";
+// globals
+@import "./common";
+@import "./typography";
+
+
+
+@import "../components/dashboardLayout/dashboardLayout";
+
+//elemental Components
+@import "../components/elementalComponents/table/table";
+@import "../components/elementalComponents/button/button";
+
+//components
+@import "../components/header/header";
+@import "../components/input/input";
+@import "../components/avatar/avatar";
+@import "../components/notification/notification";
+@import "../components/recruitmentProgress/recruitmentProgress";
+@import "../components/calendarContainer/calendarContainer";
+@import "../components/hrProfile/hrProfile";
+
+
+//screen
+@import "../screen/home/home";
