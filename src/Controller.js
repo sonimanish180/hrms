@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import DashboardLayout from "./components/dashboardLayout/DashboardLayout";
 import Login from "./components/login/Login";
+import Signup from "./components/signup/Signup";
 import Calendar from "./screen/calendar/Calendar";
 import Home from "./screen/home/Home";
 import Onboarding from "./screen/onboarding/Onboarding";
@@ -14,6 +15,7 @@ const Controller = () => {
     <Router>
       <Switch>
           <Route path="/login" render={(props) => <Login {...props} />} />
+          <Route path="/signup" render={(props) => <Signup {...props} />} /> 
         <DashboardLayout>
           <Route exact path="/" render={(props) => <Home {...props} />} />
           <Route

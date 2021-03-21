@@ -1,12 +1,13 @@
-.login-page {
+.signup-page {
     background: transparentize($color: $hr_gray1, $amount: 0.7);
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    .login {
+    .signup {
         background: $hr_white;
-        height: 50%;
+        height: 70%;
+        min-width: 30%;
         // padding: 36px;
         padding-bottom: 24px;
         border: 1px solid $hr_background;
@@ -15,8 +16,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        .login-header{
-            flex-basis: 15%;
+        .signup-header{
+            flex-basis: 10%;
             border-radius: 24px 24px 0 0;
             width: 100%;
             background-color: $hr_background;
@@ -36,7 +37,7 @@
             height: 100%;
             .input-container {
                 margin: 0 36px;
-                flex-basis: 60%;
+                flex-basis: 80%;
                 // border: 1px solid red;
                 display: flex;
                 flex-direction: column;
@@ -44,7 +45,7 @@
             }
             .button-container {
                 margin: 0 36px;
-                flex-basis: 25%;
+                flex-basis: 20%;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;

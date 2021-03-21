@@ -1,11 +1,17 @@
 .button {
-    background: transparentize($color: $hr_accent, $amount: 0.25);
     border: none;
     outline: none;
     padding: 8px;
     border-radius: 24px;
     font-weight: 600;
+    background: transparentize($color: $hr_accent, $amount: 0.25);
+    
     &:hover{
         cursor: pointer;
-    }
+    }    
 }
+// .--primary {        
+// }
+// .--secondary {
+//     background: transparent;
+// }
